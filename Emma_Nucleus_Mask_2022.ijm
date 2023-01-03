@@ -1,5 +1,5 @@
 /*
- * Make mask with nucleus images
+ * Make mask with nucleus images on ch1
  * 
  */
 
@@ -35,7 +35,7 @@ for (i = 0; i < nFichiers; i++)
 
 				run("Gaussian Blur...", "sigma=5 stack");
 				setSlice(midZ);
-				setAutoThreshold("Minimum dark stack");
+				setAutoThreshold("Default dark stack");
 				waitForUser("Is the Threshold fine for the nucleus?"); //
 				run("Convert to Mask", "method=Default background=Dark");
 				run("Fill Holes", "stack");
@@ -54,5 +54,5 @@ for (i = 0; i < nFichiers; i++)
 				
 				
 																	}
-				}
+				} else { print("ch0 is not the nucleus ?"); }
 }
