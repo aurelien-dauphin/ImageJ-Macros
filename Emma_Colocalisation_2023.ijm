@@ -75,6 +75,7 @@ for (l = 0; l < nFichiers; l++)
 			//wait(1200);
 			rename("wch3");
 			
+			selectWindow("wch3_raw");
 			setAutoThreshold("Moments dark stack");
 			//getThreshold(lowerB, upperB);
 			//waitForUser("How is the threshold of ch_2 (now: "+lowerB+" ?");	
@@ -83,7 +84,7 @@ for (l = 0; l < nFichiers; l++)
 								print("Noise ch2 high");
 								}
 			
-			selectWindow("wch2");
+			selectWindow("wch2_raw");
 			setAutoThreshold("Moments dark stack");
 			//getThreshold(lowerA, upperA);
 			//waitForUser("How is the threshold of ch_1 (now: "+lowerA+"  ?");	
