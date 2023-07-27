@@ -17,10 +17,10 @@ chA=2;
 chB=3;
 colocvolumexy=120;
 colocvolumez=340;
-lowerA=4500;
-lowerB=4500;
-minlowA=1800;
-minlowB=2500;
+lowerA=9500;
+lowerB=3000;
+minlowA=3000;
+minlowB=3000;
 
 dir=getDirectory("Choose a Directory with the objects in 2 colors, as in _ch_2.tif, and _ch_3.tif, for calculating the pearson and Manders coeficient");
 dir2=getDirectory("Choose a Directory for results");
